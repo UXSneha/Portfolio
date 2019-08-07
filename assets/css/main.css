@@ -2837,19 +2837,19 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color:  #87c5a4 ;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color:  #FFC0CB	;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color:#c7c700	;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+				background-color: #ec8d81;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3951,7 +3951,6 @@ input, select, textarea {
 
 		.typewriter p {
 			overflow: hidden; /* Ensures the content is not revealed until the animation */
-			border-right: .15em solid pink; /* The typwriter cursor */
 			white-space: nowrap; /* Keeps the content on a single line */
 			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 			letter-spacing: .15em; /* Adjust as needed */
@@ -4028,3 +4027,8 @@ input, select, textarea {
 		    100%{width:0;opacity:1; }
 		}
 	
+		.middy {
+			margin: auto;
+			width: 70%;
+			padding: 10px;
+		  }
