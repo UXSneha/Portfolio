@@ -2845,7 +2845,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color:#c7c700	;
+				background-color:#9b870c	;
 			}
 
 			.tiles article:nth-child(6n):before {
@@ -3265,19 +3265,19 @@ input, select, textarea {
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #ec8d81;
+				color: #87c5a4;
 			}
 
 			#header.alt.style4 .logo strong {
-				color: #e7b788;
+				color: #FFC0CB;
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
+				color: #9b870c;
 			}
 
 			#header.alt.style6 .logo strong {
-				color: #87c5a4;
+				color: #ec8d81;
 			}
 
 		body.is-preload #header.alt {
@@ -3497,19 +3497,19 @@ input, select, textarea {
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #87c5a4;
 		}
 
 		#banner.style4:after {
-			background-color: #e7b788;
+			background-color: #FFC0CB;
 		}
 
 		#banner.style5:after {
-			background-color: #8ea9e8;
+			background-color: #9b870c;
 		}
 
 		#banner.style6:after {
-			background-color: #87c5a4;
+			background-color: #ec8d81;
 		}
 
 		body.is-preload #banner:after {
