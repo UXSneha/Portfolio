@@ -2829,27 +2829,27 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #522377; /*6fc3df;*/
+				background-color: #361c0e; /*522377; /*6fc3df;*/
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #133155; /*8d82c4;*/
+				background-color: #570211; /*133155; /*8d82c4;*/
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #254D70; /*ec8d81;*/
+				background-color: #7e3110; /*254D70; /*ec8d81;*/
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #36195B; /*e7b788;*/
+				background-color: #004540; /*36195B; /*e7b788;*/
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #080B38; /*8ea9e8;*/
+				background-color: #032c4d; /*080B38; /*8ea9e8;*/
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #074300; /*87c5a4;*/
+				background-color: #360825; /*074300; /*87c5a4;*/
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3258,27 +3258,27 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #361c0e;
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #570211;
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #ec8d81;
+				color: #7e3110;
 			}
 
 			#header.alt.style4 .logo strong {
-				color: #e7b788;
+				color: #004540;
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
+				color: #032c4d;
 			}
 
 			#header.alt.style6 .logo strong {
-				color: #87c5a4;
+				color: #360825;
 			}
 
 		body.is-preload #header.alt {
@@ -3490,27 +3490,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #361c0e;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #570211;
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #7e3110;
 		}
 
 		#banner.style4:after {
-			background-color: #e7b788;
+			background-color: #004540;
 		}
 
 		#banner.style5:after {
-			background-color: #8ea9e8;
+			background-color: #032c4d;
 		}
 
 		#banner.style6:after {
-			background-color: #87c5a4;
+			background-color: #360825;
 		}
 
 		body.is-preload #banner:after {
