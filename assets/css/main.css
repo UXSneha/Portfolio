@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	snehadesign.space
 */
 
 html, body, div, span, applet, object,
@@ -2449,7 +2447,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(212, 212, 255, 0.035);
+				background-color: rgb(20, 20, 20);
 			}
 
 		table td {
@@ -2799,7 +2797,7 @@ input, select, textarea {
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				background-color: rgba(20, 20, 20, 0.25);
 				content: '';
 				display: block;
 				height: 100%;
@@ -2938,7 +2936,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #141414;
 		}
 
 			.spotlights > section > .image {
@@ -2949,7 +2947,7 @@ input, select, textarea {
 				position: relative;
 				width: 30%;
 			}
-
+			
 				.spotlights > section > .image img {
 					border-radius: 0;
 					display: block;
