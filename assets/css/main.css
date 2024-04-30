@@ -3490,27 +3490,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #52df81;
+			background-color: #c22121;
 		}
 
 		#banner.style2:after {
-			background-color: #30c5d2;
+			background-color: #7721c2;
 		}
 
 		#banner.style3:after {
-			background-color: #30c5d2;
+			background-color: #213ec2;
 		}
 
 		#banner.style4:after {
-			background-color: #3c6b9e;
+			background-color: #21b4c2;
 		}
 
 		#banner.style5:after {
-			background-color: #3f4c8c;
+			background-color: #21c261;
 		}
 
 		#banner.style6:after {
-			background-color: #432e7b;
+			background-color: #c2b221;
 		}
 
 		body.is-preload #banner:after {
