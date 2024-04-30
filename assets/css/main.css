@@ -2827,21 +2827,21 @@ input, select, textarea {
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
-
+/*color palette can be changed here*/
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #1F123E; /*361c0e; /*522377; /*6fc3df;*/
+				background-color: #493088; /*361c0e; /*522377; /*6fc3df;*/
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #F6B910; /*570211; /*133155; /*8d82c4;*/
+				background-color: #057AE9; /*570211; /*133155; /*8d82c4;*/
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #303B17; /*7e3110; /*254D70; /*ec8d81;*/
+				background-color: #809839; /*7e3110; /*254D70; /*ec8d81;*/
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #057AE9; /*004540; /*36195B; /*e7b788;*/
+				background-color: #F6B910; /*004540; /*36195B; /*e7b788;*/
 			}
 
 			.tiles article:nth-child(6n - 1):before {
@@ -3258,7 +3258,7 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #1F123E;;
+				color: #493088;;
 			}
 
 			#header.alt.style2 .logo strong {
@@ -3266,7 +3266,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #303B17;
+				color: #809839;
 			}
 
 			#header.alt.style4 .logo strong {
@@ -3492,7 +3492,7 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #1F123E;
+			background-color: #493088;
 		}
 
 		#banner.style2:after {
@@ -3500,7 +3500,7 @@ input, select, textarea {
 		}
 
 		#banner.style3:after {
-			background-color: #303B17;
+			background-color: #809839;
 		}
 
 		#banner.style4:after {
