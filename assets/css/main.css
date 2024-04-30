@@ -2845,11 +2845,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #5C0803; /*032c4d; /*080B38; /*8ea9e8;*/
+				background-color: #E54E05; /*032c4d; /*080B38; /*8ea9e8;*/
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #E54E05; /*360825; /*074300; /*87c5a4;*/
+				background-color: #5C0803; /*360825; /*074300; /*87c5a4;*/
 			}
 
 		@media screen and (max-width: 1280px) {
