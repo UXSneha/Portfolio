@@ -98,7 +98,7 @@ input, select, textarea {
 /*Sneha LD theme*/
 
 	body {
-		background: #000000;
+		background: #0A2422;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2830,27 +2830,27 @@ input, select, textarea {
 			}
 /*color palette can be changed here*/
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df; /*493088; /*361c0e; /*522377; /*6fc3df;*/
+				background-color: #361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4; /*057AE9; /*570211; /*133155; /*8d82c4;*/
+				background-color: #570211; /*057AE9; /*570211; /*133155; /*8d82c4;*/
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81; /*809839; /*7e3110; /*254D70; /*ec8d81;*/
+				background-color: #7e3110; /*809839; /*7e3110; /*254D70; /*ec8d81;*/
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788; /*F6B910; /*004540; /*36195B; /*e7b788;*/
+				background-color: #004540; /*F6B910; /*004540; /*36195B; /*e7b788;*/
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8; /*E54E05; /*032c4d; /*080B38; /*8ea9e8;*/
+				background-color: #032c4d; /*E54E05; /*032c4d; /*080B38; /*8ea9e8;*/
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4; /*5C0803; /*360825; /*074300; /*87c5a4;*/
+				background-color: #360825; /*5C0803; /*360825; /*074300; /*87c5a4;*/
 			}
 
 		@media screen and (max-width: 1280px) {
