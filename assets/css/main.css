@@ -2937,7 +2937,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2c2c2c;
+			background-color: #0A2422;
 		}
 
 			.spotlights > section > .image {
@@ -3107,14 +3107,14 @@ input, select, textarea {
 			opacity: 1;
 		}
 	}
-	/* 2a2f4a - 1f1f1f*/
+	/* 2a2f4a - 1f1f1f - 0A2422*/
 
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #1f1f1f;
+		background-color: #0A2422;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3145,7 +3145,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				background-color: #ffffff;
-				color: #000000;
+				color: #0A2422;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3412,7 +3412,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #000000;
+			background-color: #0A2422;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3588,10 +3588,10 @@ input, select, textarea {
 
 		}
 
-/* Main */
+/* Main 1f1f1f-0A2422 */
 
 	#main {
-		background-color: #1f1f1f;
+		background-color: #0A2422;
 	}
 
 		#main > * {
@@ -3800,7 +3800,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: #0a24229c;
+		background: rgba(10, 36, 34, 0.7);/*rgba(36, 41, 67, 0.9);*/
 		box-shadow: none;
 		height: 100%;
 		left: 0;
