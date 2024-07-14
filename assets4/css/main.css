@@ -3445,6 +3445,7 @@ input, select, textarea {
 		background: transparent;
 		box-shadow: none;
 		position: absolute;
+		text: transparent;
 	}
 
 /* Banner */
