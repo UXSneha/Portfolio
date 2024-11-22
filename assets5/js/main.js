@@ -36,10 +36,12 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/FP/GRD1.jpg': 'center',
-							'images/FP/GRD2.jpg': 'center',
-							'images/FP/GRD3.jpg': 'center',
-							'images/FP/dsmb6.jpg' : 'center'
+							'images/NL/templ1.png': 'center',
+							'images/NL/templ2.png': 'center',
+							'images/NL/templ3.png': 'center',
+							'images/NL/templ1.png': 'center'
+
+							
 						},
 
 					// Delay.
