@@ -3258,29 +3258,30 @@ input, select, textarea {
 			position: absolute;
 		}
 
-			#header.alt.style1 .logo strong {
-				color: #493088;;
-			}
+		#header.alt.style1 .logo strong {
+			color: #361c0e;
+		}
 
-			#header.alt.style2 .logo strong {
-				color: #057AE9;
-			}
+		#header.alt.style2 .logo strong {
+			color: #570211;
+		}
 
-			#header.alt.style3 .logo strong {
-				color: #809839;
-			}
+		#header.alt.style3 .logo strong {
+			color: #7e3110;
+		}
 
-			#header.alt.style4 .logo strong {
-				color: #F6B910;
-			}
+		#header.alt.style4 .logo strong {
+			color: #004540;
+		}
 
-			#header.alt.style5 .logo strong {
-				color: #E54E05;
-			}
+		#header.alt.style5 .logo strong {
+			color: #032c4d;
+		}
 
-			#header.alt.style6 .logo strong {
-				color: #5C0803;
-			}
+		#header.alt.style6 .logo strong {
+			color: #360825;
+		}
+			
 
 			
 
@@ -3493,27 +3494,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #493088;
+			background-color: #361c0e;
 		}
 
 		#banner.style2:after {
-			background-color: #057AE9;
+			background-color: #570211;
 		}
 
 		#banner.style3:after {
-			background-color: #809839;
+			background-color: #7e3110;
 		}
 
 		#banner.style4:after {
-			background-color: #F6B910;
+			background-color: #004540;
 		}
 
 		#banner.style5:after {
-			background-color: #E54E05;
+			background-color: #032c4d;
 		}
 
 		#banner.style6:after {
-			background-color: #5C0803;
+			background-color: #360825;
 		}
 
 		body.is-preload #banner:after {
