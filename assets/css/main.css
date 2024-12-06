@@ -3135,9 +3135,11 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 0.8em;
 			height: inherit;
-			line-height: inherit;
-			padding: 0 1.5em;
-		}
+			line-height: 1.65em;
+			padding: 0.375em;
+			vertical-align: middle;
+
+		} 
 
 			#header .logo strong {
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
