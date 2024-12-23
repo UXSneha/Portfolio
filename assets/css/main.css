@@ -4037,3 +4037,8 @@ input, select, textarea {
 			width: 70%;
 			padding: 10px;
 		  }
+
+		  .rounded-img {
+			border-radius: 21px; /* Adjust the radius as needed */
+		}
+		
