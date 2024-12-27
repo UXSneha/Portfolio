@@ -26,14 +26,17 @@
 		<header id="header" class="alt">
 			<a href="index.html" class="logo"> <img src="images/favicon.ico" alt="" width="35" height="35" /></a>
 			<nav>
+				<button id="theme-toggle" class="theme-toggle">pastel</button>
+
 				<a href="#menu">MENU</a>
+
 			</nav>
 		</header>
 
 		<!-- Menu -->
 		<nav id="menu">
 			<h3> Case Studies
-			</h3>
+</h3>
 			<ul class="links">
 				<li>---------------------------------------</li>
 				<li> <a href="ChatbotChronicles.html">💬 Chatbot Chronicles 💬 </a> </li>
@@ -45,7 +48,6 @@
 				<li>---------------------------------------</li>
 				<li><a href="DesignExperiments.html">🌐 Design Experiments 🌐</a> </li>
 				<li><a href="MoreAboutMe.html">About Me</a></li>
-			</ul>
 			</ul>
 			<ul class="actions stacked">
 				<li><a href="index.html" class="button primary fit"> 🏠 HOME 🏠</a></li>
@@ -242,7 +244,32 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const themeToggle = document.getElementById("theme-toggle");
+			const themeStyle = document.getElementById("theme-style");
 
+			// Check localStorage for the saved theme
+			const savedTheme = localStorage.getItem("theme");
+			if (savedTheme === "light") {
+				themeStyle.setAttribute("href", "assets/css/main2.css");
+				themeToggle.textContent = "Dark Mode";
+			}
+
+			// Toggle the theme on button click
+			themeToggle.addEventListener("click", function () {
+				if (themeStyle.getAttribute("href") === "assets/css/main.css") {
+					themeStyle.setAttribute("href", "assets/css/main2.css");
+					themeToggle.textContent = "Earthy";
+					localStorage.setItem("theme", "light");
+				} else {
+					themeStyle.setAttribute("href", "assets/css/main.css");
+					themeToggle.textContent = "Pastel";
+					localStorage.setItem("theme", "dark");
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
