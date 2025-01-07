@@ -2830,15 +2830,15 @@ input, select, textarea {
 			}
 /*color palette can be changed here*/
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
+				background-color: #1e424a; /*361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #4B1D3F; /*057AE9; /*570211; /*133155; /*8d82c4;*/
+				background-color: #416076; /*4B1D3F; /*057AE9; /*570211; /*133155; /*8d82c4;*/
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #7e3110; /*809839; /*7e3110; /*254D70; /*ec8d81;*/
+				background-color:  #747d9f;/*#7e3110; /*809839; /*7e3110; /*254D70; /*ec8d81;*/
 			}
 
 			.tiles article:nth-child(6n - 2):before {
