@@ -8,13 +8,14 @@
 	<title>My Career Path</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script src="assets/js/ToggleTheme.js"></script>
 
 <body class="is-preload">
 
@@ -23,8 +24,15 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<a href="index.html" class="logo"> <img src="images/favicon.ico" alt="" width="35" height="35" /></a>
+			<a href="index.html" class="logo"> <img src="images/favicon.ico" alt="" width="70" height="70" /></a>
 			<nav>
+				<!-- Toggle Theme -->
+				<a href="#" id="theme-toggle" title="Toggle Theme">
+					<img id="dark-mode-icon" src="images/theme-dark.png" alt="Switch to Light Mode" width="40"
+						height="40" style="cursor: pointer; display: inline;">
+					<img id="light-mode-icon" src="images/theme-light.png" alt="Switch to Dark Mode" width="40"
+						height="40" style="cursor: pointer; display: none;">
+				</a>
 				<a href="#menu">MENU</a>
 			</nav>
 		</header>
@@ -116,6 +124,38 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const themeToggle = document.getElementById("theme-toggle");
+			const themeStyle = document.getElementById("theme-style");
+			const darkModeIcon = document.getElementById("dark-mode-icon");
+			const lightModeIcon = document.getElementById("light-mode-icon");
+	
+			// Check localStorage for the saved theme
+			const savedTheme = localStorage.getItem("theme");
+			if (savedTheme === "light") {
+				themeStyle.setAttribute("href", "assets/css/main2.css");
+				darkModeIcon.style.display = "none";
+				lightModeIcon.style.display = "inline";
+			}
+	
+			// Toggle the theme on logo click
+			themeToggle.addEventListener("click", function (event) {
+				event.preventDefault(); // Prevent default link behavior
+				if (themeStyle.getAttribute("href") === "assets/css/main.css") {
+					themeStyle.setAttribute("href", "assets/css/main2.css");
+					darkModeIcon.style.display = "none";
+					lightModeIcon.style.display = "inline";
+					localStorage.setItem("theme", "light");
+				} else {
+					themeStyle.setAttribute("href", "assets/css/main.css");
+					darkModeIcon.style.display = "inline";
+					lightModeIcon.style.display = "none";
+					localStorage.setItem("theme", "dark");
+				}
+			});
+		});
+	</script>
 
 </body>
 

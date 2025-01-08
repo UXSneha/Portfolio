@@ -3193,6 +3193,11 @@ input, select, textarea {
 					padding-right: 1.5em;
 				}
 
+				#header nav img {
+					max-height: 40px; /* Adjust as needed for image size */
+					margin-top: 15px; /* Top padding added with margin */
+				}
+
 				#header nav a[href="#menu"] {
 					padding-right: 3.325em !important;
 				}
@@ -3365,6 +3370,8 @@ input, select, textarea {
 				width: 5em;
 			}
 
+
+
 				#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 					right: 0;
 					width: inherit;
@@ -3376,6 +3383,8 @@ input, select, textarea {
 				}
 
 		}
+
+		
 
 /* Banner */
 

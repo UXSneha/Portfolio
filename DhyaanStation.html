@@ -8,12 +8,13 @@
 	<title>Dhyaan Station</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script src="assets/js/ToggleTheme.js"></script>
 
 <body class="is-preload">
 
@@ -24,6 +25,13 @@
 		<header id="header" class="alt">
 			<a href="HomePage.html" class="logo"> <img src="images/favicon.ico" alt="" width="35" height="35" /></a>
 			<nav>
+				<!-- Toggle Theme -->
+				<a href="#" id="theme-toggle" title="Toggle Theme">
+					<img id="dark-mode-icon" src="images/theme-dark.png" alt="Switch to Light Mode" width="40"
+						height="40" style="cursor: pointer; display: inline;">
+					<img id="light-mode-icon" src="images/theme-light.png" alt="Switch to Dark Mode" width="40"
+						height="40" style="cursor: pointer; display: none;">
+				</a>
 				<a href="#menu">MENU</a>
 			</nav>
 		</header>
