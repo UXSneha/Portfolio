@@ -2830,12 +2830,12 @@ input, select, textarea {
 			}
 /*color palette can be changed here*/
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #1e424a; /*361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
+				background-color: #361c0e; /*361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #416076; 
-/*4B1D3F; /*057AE9; /*570211; /*133155; /*8d82c4;*/
+				background-color: #4B1D3F; 
+/*4B1D3F; /*057AE9; /*4B1D3F; /*133155; /*8d82c4;*/
 			}
 
 			.tiles article:nth-child(6n - 3):before {
@@ -2853,6 +2853,7 @@ input, select, textarea {
 			.tiles article:nth-child(6n):before {
 				background-color: #360825; /*5C0803; /*360825; /*074300; /*87c5a4;*/
 			}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -3270,7 +3271,7 @@ input, select, textarea {
 		}
 
 		#header.alt.style2 .logo strong {
-			color: #570211;
+			color: #4B1D3F;
 		}
 
 		#header.alt.style3 .logo strong {
@@ -3510,7 +3511,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #570211;
+			background-color: #4B1D3F;
 		}
 
 		#banner.style3:after {
