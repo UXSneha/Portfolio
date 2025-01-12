@@ -8,13 +8,13 @@
 	<title>MediConnect</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
+	<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<script src="assets/js/ToggleTheme.js"></script>
+	<script src="assets/js/ToggleTheme.js"></script>
 </head>
 
 <body class="is-preload">
@@ -196,8 +196,10 @@
 				<span class="image fit"><img src="images/EC/30.jpeg" alt="" /></span>
 				<span class="image fit"><img src="images/EC/31.jpeg" alt="" /></span>
 				<ul>
-					<p>After the project went live, I am unable to share the final mockups here, as we utilized our
-						design system components and included elements covered under non-disclosure agreements (NDAs).
+					<p>After the project went live, I am sharing the <a href="https://www.figma.com/proto/WGPcmiqpBW8t9rhcm43EQ4/Medical?page-id=0%3A1&node-id=0-3047&starting-point-node-id=0%3A3047&t=lZALVni0mwc6XubH-1" target="_blank">Figma file here.</a></p>
+					The app was initially called EasyCare, which was later renamed to Mediconnect. Please note that we further
+						updated our design system and color scheme after this version, but I do not have access to those
+						updates.
 						However, here are a few key learnings from this project:</p>
 					<li><b>Importance of User-Centric Design:</b> The entire process reinforced how critical it is to
 						design with the user in mind, ensuring that their needs and pain points are addressed
@@ -271,7 +273,7 @@
 			const themeStyle = document.getElementById("theme-style");
 			const darkModeIcon = document.getElementById("dark-mode-icon");
 			const lightModeIcon = document.getElementById("light-mode-icon");
-	
+
 			// Check localStorage for the saved theme
 			const savedTheme = localStorage.getItem("theme");
 			if (savedTheme === "light") {
@@ -279,7 +281,7 @@
 				darkModeIcon.style.display = "none";
 				lightModeIcon.style.display = "inline";
 			}
-	
+
 			// Toggle the theme on logo click
 			themeToggle.addEventListener("click", function (event) {
 				event.preventDefault(); // Prevent default link behavior
@@ -298,7 +300,7 @@
 		});
 	</script>
 
-	
+
 
 </body>
 

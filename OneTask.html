@@ -8,9 +8,10 @@
 	<title>One Task</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
+	<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -189,17 +190,17 @@
 					<header class="major">
 						<h3>NEXT PHASE</h3>
 					</header>
-					<p> We published the App in the Android market and received a huge positve response.
-						After a lot of Usability testing and feedback from users we are currently working on
-						adding more features to this App like Login and storage of User Task data and classification
-						of tasks and regular tasks.
+					<p> We are currently working on a smartwatch version of the app in collaboration with a smartwatch
+						company that approached us. However, we are yet to hear back from them to move forward with the
+						development.
 					</p>
 
 				</div>
 			</section>
 			<section>
 				<ul class="actions stacked">
-					<li><a href="LibraryPortal.html" class="button primary fit">Next Case Study : 📚 Library Portal Redesign 📚</a>
+					<li><a href="LibraryPortal.html" class="button primary fit">Next Case Study : 📚 Library Portal
+							Redesign 📚</a>
 					</li>
 				</ul>
 
@@ -207,18 +208,18 @@
 
 
 		</div>
-		</div>
+	</div>
 
-		<!-- Footer --> 
-		<footer id="footer">
-			<div class="inner">
-				
-				<ul class="copyright">
-					<li>&copy; 2025 </li>
-					<li>Crafted with Love. My Spectrum of Selected Projects.</a></li>
-				</ul>
-			</div>
-		</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+
+			<ul class="copyright">
+				<li>&copy; 2025 </li>
+				<li>Crafted with Love. My Spectrum of Selected Projects.</a></li>
+			</ul>
+		</div>
+	</footer>
 
 	</div>
 
@@ -236,7 +237,7 @@
 			const themeStyle = document.getElementById("theme-style");
 			const darkModeIcon = document.getElementById("dark-mode-icon");
 			const lightModeIcon = document.getElementById("light-mode-icon");
-	
+
 			// Check localStorage for the saved theme
 			const savedTheme = localStorage.getItem("theme");
 			if (savedTheme === "light") {
@@ -244,7 +245,7 @@
 				darkModeIcon.style.display = "none";
 				lightModeIcon.style.display = "inline";
 			}
-	
+
 			// Toggle the theme on logo click
 			themeToggle.addEventListener("click", function (event) {
 				event.preventDefault(); // Prevent default link behavior
