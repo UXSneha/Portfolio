@@ -8,7 +8,7 @@
 	<title>My Career Path</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
+	<link rel="stylesheet" href="assets/css/main.css" id="theme-style">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -36,30 +36,31 @@
 				<a href="#menu">MENU</a>
 			</nav>
 		</header>
-
+		
 		<!-- Menu -->
 		<nav id="menu">
 			<h3> Case Studies
 			</h3>
 			<ul class="links">
 				<li>---------------------------------------</li>
-				<li> <a href="ChatbotChronicles.html">💬 Chatbot Chronicles 💬 </a> </li>
-				<li><a href="Mediconnect.html"> 💖 Medi Connect 💖</a> </li>
-				<li><a href="DIYLoan.html">🏦 D.I.Y. Loan Experience 🏦</a></li>
-				<li><a href="OneTask.html">🚀 One Task 🚀</a> </li>
-				<li> <a href="LibraryPortal.html">📚 Library Portal Redesign 📚</a> </li>
-				<li> <a href="BookMySport.html"> 🎾 Book My Sport 🎾</a></li>
+				<li><a href="mediconnect.html"> 💖 Medi Connect 💖</a> </li>
+				<li> <a href="chatbotchronicles.html">💬 Chatbot Chronicles 💬 </a> </li>
+				<li><a href="diyloan.html">🏦 D.I.Y. Loan Experience 🏦</a></li>
+				<li><a href="onetask.html">🚀 One Task 🚀</a> </li>
+				<li> <a href="libraryportal.html">📚 Library Portal Redesign 📚</a> </li>
+				<li> <a href="bookmysport.html"> 🎾 Book My Sport 🎾</a></li>
 				<li>---------------------------------------</li>
-				<li><a href="DesignExperiments.html">🌐 Design Experiments 🌐</a> </li>
-				<li><a href="MoreAboutMe.html">About Me</a></li>
-			</ul>
+				<li><a href="designexperiments.html">🌐 Design Experiments 🌐</a> </li>
+				<li><a href="moreaboutme.html">About Me</a></li>
+				<li><a href="Sneha_Resume.pdf" class="button small icon fit solid fa-download" target="_blank"
+						rel="noopener noreferrer">Resume</a></li>
 			</ul>
 			<ul class="actions stacked">
 				<li><a href="index.html" class="button primary fit"> 🏠 HOME 🏠</a></li>
 			</ul>
 		</nav>
 
-			<!-- Banner -->
+		<!-- Banner -->
 		<!-- Note: The "styleN" class below should match that of the header element. -->
 		<section id="banner" class="style5">
 			<div class="inner">
@@ -80,7 +81,7 @@
 
 			<span class="image fit" style="max-width: 1008px; margin-left: auto; margin-right: auto;"><img
 					src="images/ct.png" alt="" /></span>
-			
+
 
 			<section>
 				<ul class="actions stacked">
@@ -99,8 +100,8 @@
 									class="label">Facebook</span></a></li>
 						<li><a href="https://www.behance.net/uxsneha" class="icon brands alt fa-behance"><span
 									class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/colorsndoodles" class="icon brands alt fa-instagram"><span
-									class="label">Instagram</span></a></li>
+						<li><a href="https://www.instagram.com/colorsndoodles"
+								class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://www.linkedin.com/in/uxsneha" class="icon brands alt fa-linkedin-in"><span
 									class="label">LinkedIn</span></a></li>
 					</ul>
@@ -130,7 +131,7 @@
 			const themeStyle = document.getElementById("theme-style");
 			const darkModeIcon = document.getElementById("dark-mode-icon");
 			const lightModeIcon = document.getElementById("light-mode-icon");
-	
+
 			// Check localStorage for the saved theme
 			const savedTheme = localStorage.getItem("theme");
 			if (savedTheme === "light") {
@@ -138,7 +139,7 @@
 				darkModeIcon.style.display = "none";
 				lightModeIcon.style.display = "inline";
 			}
-	
+
 			// Toggle the theme on logo click
 			themeToggle.addEventListener("click", function (event) {
 				event.preventDefault(); // Prevent default link behavior

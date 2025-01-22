@@ -37,35 +37,33 @@ snehadesign.space
         </header>
 
         <!-- Menu -->
-        <nav id="menu">
-            <h3> Case Studies
-            </h3>
-            <ul class="links">
-                <li>---------------------------------------</li>
-                <li> <a href="ChatbotChronicles.html">💡 Chatbot Chronicles 💡</a> </li>
-                <li><a href="Mediconnect.html"> 💖 Medi Connect 💖</a> </li>
-                <li><a href="DIYLoan.html">🏦 DIY Loan Journey 🏦</a></li>
-                <li><a href="OneTask.html">🚀 One Task 🚀</a> </li>
-                <li> <a href="LibraryPortal.html">📚 Library Portal Redesign 📚</a> </li>
-                <li> <a href="BookMySport.html"> 🎾 Book My Sport 🎾</a></li>
-                <li>---------------------------------------</li>
-                <li><a href="DesignExperiments.html">🌐 Design Experiments 🌐</a> </li>
-                <li><a href="MoreAboutMe.html">About Me</a></li>
-                <li><a href="Sneha_Resume.pdf" class="button small icon fit solid fa-download" target="_blank">Resume</a>
-                </li>
-            </ul>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="index.html" class="button primary fit"> 🏠 HOME 🏠</a></li>
-            </ul>
-        </nav>
+		<nav id="menu">
+			<h3> Case Studies
+			</h3>
+			<ul class="links">
+				<li>---------------------------------------</li>
+				<li><a href="mediconnect.html"> 💖 Medi Connect 💖</a> </li>
+				<li> <a href="chatbotchronicles.html">💬 Chatbot Chronicles 💬 </a> </li>
+				<li><a href="diyloan.html">🏦 D.I.Y. Loan Experience 🏦</a></li>
+				<li><a href="onetask.html">🚀 One Task 🚀</a> </li>
+				<li> <a href="libraryportal.html">📚 Library Portal Redesign 📚</a> </li>
+				<li> <a href="bookmysport.html"> 🎾 Book My Sport 🎾</a></li>
+				<li>---------------------------------------</li>
+				<li><a href="designexperiments.html">🌐 Design Experiments 🌐</a> </li>
+				<li><a href="moreaboutme.html">About Me</a></li>
+				<li><a href="Sneha_Resume.pdf" class="button small icon fit solid fa-download" target="_blank" rel="noopener noreferrer">Resume</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="index.html" class="button primary fit"> 🏠 HOME 🏠</a></li>
+			</ul>
+		</nav>
 
         <!-- Banner -->
         <!-- Note: The "styleN" class below should match that of the header element. -->
-        <section id="banner" class="style1">
+        <section id="banner" class="style3">
             <div class="inner">
                 <span class="image">
-                    <img src="images/Idx/loan.jpg" alt="" />
+                    <img src="images/diyl.jpg" alt="" />
                 </span>
                 <header class="major">
                     <h1> 🏦 DIY Loan Journey 🏦</h1>
@@ -344,6 +342,38 @@ snehadesign.space
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const themeToggle = document.getElementById("theme-toggle");
+                const themeStyle = document.getElementById("theme-style");
+                const darkModeIcon = document.getElementById("dark-mode-icon");
+                const lightModeIcon = document.getElementById("light-mode-icon");
+    
+                // Check localStorage for the saved theme
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "light") {
+                    themeStyle.setAttribute("href", "assets/css/main2.css");
+                    darkModeIcon.style.display = "none";
+                    lightModeIcon.style.display = "inline";
+                }
+    
+                // Toggle the theme on logo click
+                themeToggle.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    if (themeStyle.getAttribute("href") === "assets/css/main.css") {
+                        themeStyle.setAttribute("href", "assets/css/main2.css");
+                        darkModeIcon.style.display = "none";
+                        lightModeIcon.style.display = "inline";
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        themeStyle.setAttribute("href", "assets/css/main.css");
+                        darkModeIcon.style.display = "inline";
+                        lightModeIcon.style.display = "none";
+                        localStorage.setItem("theme", "dark");
+                    }
+                });
+            });
+        </script>
 
 </body>
 
