@@ -3602,7 +3602,7 @@ input, select, textarea {
 /* Main 1f1f1f-0A2422 */
 
 	#main {
-		background-color: #F5C4C1;
+		background-color: #B2E4C8;
 	}
 
 		#main > * {
@@ -3726,6 +3726,7 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
+	
 		#footer .copyright li {
 			border-left: solid 1px rgba(0,0,0,0.4);
 			color: rgba(30, 34, 61, 0.85);

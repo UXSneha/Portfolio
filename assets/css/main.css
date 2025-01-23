@@ -2829,30 +2829,31 @@ input, select, textarea {
 				width: 60%;
 			}
 /*color palette can be changed here*/
-			.tiles article:nth-child(6n - 5):before {
-				background-color: #3a738a; /*361c0e; /*493088; /*361c0e; /*522377; /*6fc3df;*/
-			}
+.tiles article:nth-child(6n - 5):before {
+    background-color: #112c33; /* Darker version of #1f4a57 */
+}
 
-			.tiles article:nth-child(6n - 4):before {
-				background-color: #554b8a; 
-/*4B1D3F; /*057AE9; /*4B1D3F; /*133155; /*8d82c4;*/
-			}
+.tiles article:nth-child(6n - 4):before {
+    background-color: #1d1933; /* Darker version of #342d5a */
+}
 
-			.tiles article:nth-child(6n - 3):before {
-				background-color: #a15048; /*809839; /*7e3110; /*254D70; /*ec8d81;*/
-			}
+.tiles article:nth-child(6n - 3):before {
+    background-color: #4b1d18; /* Darker version of #6f2f26 */
+}
 
-			.tiles article:nth-child(6n - 2):before { 
-				background-color: #9f7a4f; /*F6B910; /*004540; /*36195B; /*e7b788;*/
-			}
+.tiles article:nth-child(6n - 2):before {
+    background-color: #4a3a23; /* Darker version of #6b5333 */
+}
 
-			.tiles article:nth-child(6n - 1):before {
-				background-color: #4c5d8e; /*E54E05; /*032c4d; /*080B38; /*8ea9e8;*/
-			}
+.tiles article:nth-child(6n - 1):before {
+    background-color: #1a2233; /* Darker version of #2d3952 */
+}
 
-			.tiles article:nth-child(6n):before {
-				background-color: #4b7c63; /*5C0803; /*360825; /*074300; /*87c5a4;*/
-			}
+.tiles article:nth-child(6n):before {
+    background-color: #173229; /* Darker version of #2a5242 */
+}
+
+			
 
 
 		@media screen and (max-width: 1280px) {
@@ -2939,7 +2940,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #4a241b; /*here*/
+			background-color: #140A07; /*here*/
 		}
 
 			.spotlights > section > .image {
@@ -3001,7 +3002,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #0a2422;
+				background-color: #0A2422;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3109,14 +3110,14 @@ input, select, textarea {
 			opacity: 1;
 		}
 	}
-	/* 2a2f4a - 1f1f1f - 0A2422*/
+	/* 2a2f4a - 1f1f1f - 0c0504*/
 
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #4a241b; /*here*/
+		background-color: #140A07; /*here*/
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3149,7 +3150,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				background-color: #ffffff;
-				color: #4a241b; /*here*/
+				color: #140A07; /*here*/
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3267,27 +3268,27 @@ input, select, textarea {
 		}
 
 		#header.alt.style1 .logo strong {
-			color: #361c0e;
+			color: #1f4a57;
 		}
 
 		#header.alt.style2 .logo strong {
-			color: #4B1D3F;
+			color: #342d5a;
 		}
 
 		#header.alt.style3 .logo strong {
-			color: #7e3110;
+			color: #6f2f26;
 		}
 
 		#header.alt.style4 .logo strong {
-			color: #004540;
+			color: #6b5333;
 		}
 
 		#header.alt.style5 .logo strong {
-			color: #032c4d;
+			color: #2d3952;
 		}
 
 		#header.alt.style6 .logo strong {
-			color: #360825;
+			color: #2a5242;
 		}
 			
 
@@ -3423,7 +3424,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #4a241b; /*here*/
+			background-color: #140A07; /*here*/
 			content: '';
 			display: block;
 			height: 100%;
@@ -3504,27 +3505,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #361c0e;
+			background-color: #1f4a57;
 		}
 
 		#banner.style2:after {
-			background-color: #4B1D3F;
+			background-color: #342d5a;
 		}
 
 		#banner.style3:after {
-			background-color: #7e3110;
+			background-color: #6f2f26;
 		}
 
 		#banner.style4:after {
-			background-color: #004540;
+			background-color: #6b5333;
 		}
 
 		#banner.style5:after {
-			background-color: #032c4d;
+			background-color: #2d3952;
 		}
 
 		#banner.style6:after {
-			background-color: #360825;
+			background-color: #2a5242;
 		}
 
 		body.is-preload #banner:after {
@@ -3599,10 +3600,10 @@ input, select, textarea {
 
 		}
 
-/* Main 1f1f1f-0A2422 */
+/* Main 1f1f1f-0c0504 */
 
 	#main {
-		background-color: #4a241b; /*here*/
+		background-color: #0A2422; /*here*/
 	}
 
 		#main > * {
