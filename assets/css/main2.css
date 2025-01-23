@@ -3324,7 +3324,7 @@ input, select, textarea {
 			}
 
 				#header .logo {
-					padding: 0 1em;
+					padding: 0 ;
 				}
 
 				#header nav a {
@@ -3421,7 +3421,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #F5C4C1;
+			background-color: #B2E4C8;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3812,7 +3812,8 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(150, 120, 180, 0.7); /*rgba(10, 36, 34, 0.7);/*rgba(36, 41, 67, 0.9);*/
+		background: rgba(178, 229, 203, 0.7);
+		/*rgba(10, 36, 34, 0.7);/*rgba(36, 41, 67, 0.9);*/
 		box-shadow: none;
 		height: 100%;
 		left: 0;
