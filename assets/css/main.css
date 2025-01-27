@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /*
-	snehadesign.space
+	snehadesign.space dark 
 */
 
 html, body, div, span, applet, object,
@@ -2113,6 +2113,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			color: #ffffff;
 		}
 
 		.icon > .label {
@@ -2828,30 +2829,29 @@ input, select, textarea {
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
-/*color palette can be changed here*/
+/*color palette can be changed here dark*/
 .tiles article:nth-child(6n - 5):before {
-    background-color: #112c33; /* Darker version of #1f4a57 */
+    background-color: #7E54C8; /* Violet */
 }
-
 .tiles article:nth-child(6n - 4):before {
-    background-color: #1d1933; /* Darker version of #342d5a */
+    background-color: #5869B9; /* Indigo */
 }
-
 .tiles article:nth-child(6n - 3):before {
-    background-color: #4b1d18; /* Darker version of #6f2f26 */
+    background-color: #3E90AF; /* Blue */
 }
-
 .tiles article:nth-child(6n - 2):before {
-    background-color: #4a3a23; /* Darker version of #6b5333 */
+    background-color: #77B55F; /* Green */
 }
-
 .tiles article:nth-child(6n - 1):before {
-    background-color: #1a2233; /* Darker version of #2d3952 */
+    background-color: #E4A635; /* Yellow */
+}
+.tiles article:nth-child(6n):before {
+    background-color: #D66D62; /* Red */
 }
 
-.tiles article:nth-child(6n):before {
-    background-color: #173229; /* Darker version of #2a5242 */
-}
+
+
+
 
 			
 
@@ -3266,29 +3266,30 @@ input, select, textarea {
 			position: absolute;
 		}
 
-		#header.alt.style1 .logo strong {
-			color: #1f4a57;
-		}
+		/* Header Colors */
+#header.alt.style1 .logo strong {
+    color: #7E54C8; /* Violet */
+}
 
-		#header.alt.style2 .logo strong {
-			color: #342d5a;
-		}
+#header.alt.style2 .logo strong {
+    color: #5869B9; /* Indigo */
+}
 
-		#header.alt.style3 .logo strong {
-			color: #6f2f26;
-		}
+#header.alt.style3 .logo strong {
+    color: #3E90AF; /* Blue */
+}
 
-		#header.alt.style4 .logo strong {
-			color: #6b5333;
-		}
+#header.alt.style4 .logo strong {
+    color: #77B55F; /* Green */
+}
 
-		#header.alt.style5 .logo strong {
-			color: #2d3952;
-		}
+#header.alt.style5 .logo strong {
+    color: #E4A635; /* Yellow */
+}
 
-		#header.alt.style6 .logo strong {
-			color: #2a5242;
-		}
+#header.alt.style6 .logo strong {
+    color: #D66D62; /* Red */
+}
 			
 
 			
@@ -3503,29 +3504,36 @@ input, select, textarea {
 				opacity: 0.75;
 			}
 
-		#banner.style1:after {
-			background-color: #1f4a57;
-		}
+/* Banner Colors */
+#banner.alt.style1 {
+    background-color: #7E54C8; /* Violet */
+    color: white; /* For text contrast */
+}
 
-		#banner.style2:after {
-			background-color: #342d5a;
-		}
+#banner.alt.style2 {
+    background-color: #5869B9; /* Indigo */
+    color: white; /* For text contrast */
+}
 
-		#banner.style3:after {
-			background-color: #6f2f26;
-		}
+#banner.alt.style3 {
+    background-color: #3E90AF; /* Blue */
+    color: white; /* For text contrast */
+}
 
-		#banner.style4:after {
-			background-color: #6b5333;
-		}
+#banner.alt.style4 {
+    background-color: #77B55F; /* Green */
+    color: white; /* For text contrast */
+}
 
-		#banner.style5:after {
-			background-color: #2d3952;
-		}
+#banner.alt.style5 {
+    background-color: #E4A635; /* Yellow */
+    color: black; /* For better contrast with bright yellow */
+}
 
-		#banner.style6:after {
-			background-color: #2a5242;
-		}
+#banner.alt.style6 {
+    background-color: #D66D62; /* Red */
+    color: white; /* For text contrast */
+}
 
 		body.is-preload #banner:after {
 			opacity: 1.0;
