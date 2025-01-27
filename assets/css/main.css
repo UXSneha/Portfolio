@@ -3265,6 +3265,7 @@ input, select, textarea {
 			box-shadow: none;
 			position: absolute;
 		}
+		
 
 		/* Header Colors */
 #header.alt.style1 .logo strong {
@@ -3505,34 +3506,28 @@ input, select, textarea {
 			}
 
 /* Banner Colors */
-#banner.alt.style1 {
+#banner.style1:after {
     background-color: #7E54C8; /* Violet */
-    color: white; /* For text contrast */
 }
 
-#banner.alt.style2 {
+#banner.style2:after {
     background-color: #5869B9; /* Indigo */
-    color: white; /* For text contrast */
 }
 
-#banner.alt.style3 {
+#banner.style3:after {
     background-color: #3E90AF; /* Blue */
-    color: white; /* For text contrast */
 }
 
-#banner.alt.style4 {
+#banner.style4:after {
     background-color: #77B55F; /* Green */
-    color: white; /* For text contrast */
 }
 
-#banner.alt.style5 {
+#banner.style5:after {
     background-color: #E4A635; /* Yellow */
-    color: black; /* For better contrast with bright yellow */
 }
 
-#banner.alt.style6 {
+#banner.style6:after {
     background-color: #D66D62; /* Red */
-    color: white; /* For text contrast */
 }
 
 		body.is-preload #banner:after {
