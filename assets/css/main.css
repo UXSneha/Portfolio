@@ -3285,29 +3285,29 @@ input, select, textarea {
 		
 
 	/* Header styles for Dark Mode */
-#header.alt.style1 .logo strong {
-    color: #5D4B8B; /* Deep Violet */
-}
-
-#header.alt.style2 .logo strong {
-    color: #4A3A75; /* Dark Lavender */
-}
-
-#header.alt.style3 .logo strong {
-    color: #2A4E72; /* Muted Blue */
-}
-
-#header.alt.style4 .logo strong {
-    color: #3C7262; /* Dark Sage Green */
-}
-
-#header.alt.style5 .logo strong {
-    color: #E8BB6D; /* Soft Gold */
-}
-
-#header.alt.style6 .logo strong {
-    color: #F28C7F; /* Muted Coral */
-}
+	#header.alt.style1 .logo strong {
+		color: #5D4B8B; /* Deep Violet */
+	}
+	
+	#header.alt.style2 .logo strong {
+		color: #4A3A75; /* Dark Lavender */
+	}
+	
+	#header.alt.style3 .logo strong {
+		color: #2A4E72; /* Muted Blue */
+	}
+	
+	#header.alt.style4 .logo strong {
+		color: #3C7262; /* Dark Sage Green */
+	}
+	
+	#header.alt.style5 .logo strong {
+		color: #4F9F79; /* Forest Green */
+	}
+	
+	#header.alt.style6 .logo strong {
+		color: #E8BB6D; /* Soft Gold */
+	}
 
 			
 
@@ -3539,11 +3539,11 @@ input, select, textarea {
 }
 
 #banner.style5:after {
-    background-color: #E8BB6D; /* Soft Gold */
+    background-color: #4F9F79; /* Forest Green */
 }
 
 #banner.style6:after {
-    background-color: #F28C7F; /* Muted Coral */
+    background-color: #E8BB6D; /* Soft Gold */
 }
 
 		body.is-preload #banner:after {

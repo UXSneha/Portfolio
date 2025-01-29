@@ -3302,12 +3302,13 @@ input, select, textarea {
 }
 
 #header.alt.style5 .logo strong {
-    color: #FFCC80; /* Subtle Yellow */
+    color: #A0E2A9; /* Light Mint */
 }
 
 #header.alt.style6 .logo strong {
-    color: #FF9A8B; /* Subtle Peach */
+    color: #FFCC80; /* Subtle Yellow */
 }
+
 			
 
 		
@@ -3521,7 +3522,7 @@ input, select, textarea {
 				opacity: 0.75;
 			}
 			
-/* Banner styles for Light Mode */
+/* Banner lite mode*/
 #banner.style1:after {
     background-color: #B9A0D3; /* Soft Violet */
 }
@@ -3539,12 +3540,13 @@ input, select, textarea {
 }
 
 #banner.style5:after {
-    background-color: #FFCC80; /* Subtle Yellow */
+    background-color: #A0E2A9; /* Light Mint */
 }
 
 #banner.style6:after {
-    background-color: #FF9A8B; /* Subtle Peach */
+    background-color: #FFCC80; /* Subtle Yellow */
 }
+
 
 		body.is-preload #banner:after {
 			opacity: 1.0;
