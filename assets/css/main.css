@@ -2830,24 +2830,41 @@ input, select, textarea {
 				width: 60%;
 			}
 /*color palette can be changed here dark*/
-.tiles article:nth-child(6n - 5):before {
-    background-color: #7E54C8; /* Violet */
+.tiles article:nth-child(8n - 7):before {
+    background-color: #5D4B8B; /* Deep Violet */
 }
-.tiles article:nth-child(6n - 4):before {
-    background-color: #5869B9; /* Indigo */
+
+.tiles article:nth-child(8n - 6):before {
+    background-color: #4A3A75; /* Dark Lavender */
 }
-.tiles article:nth-child(6n - 3):before {
-    background-color: #3E90AF; /* Blue */
+
+.tiles article:nth-child(8n - 5):before {
+    background-color: #2A4E72; /* Muted Blue */
 }
-.tiles article:nth-child(6n - 2):before {
-    background-color: #77B55F; /* Green */
+
+.tiles article:nth-child(8n - 4):before {
+    background-color: #3C7262; /* Dark Sage Green */
 }
-.tiles article:nth-child(6n - 1):before {
-    background-color: #E4A635; /* Yellow */
+
+.tiles article:nth-child(8n - 3):before {
+    background-color: #4F9F79; /* Forest Green */
 }
-.tiles article:nth-child(6n):before {
-    background-color: #D66D62; /* Red */
+
+.tiles article:nth-child(8n - 2):before {
+    background-color: #E8BB6D; /* Soft Gold */
 }
+
+.tiles article:nth-child(8n - 1):before {
+    background-color: #F28C7F; /* Muted Coral */
+}
+
+.tiles article:nth-child(8n):before {
+    background-color: #D89A9A; /* Soft Brick Red */
+}
+
+
+
+
 
 
 
@@ -3267,31 +3284,30 @@ input, select, textarea {
 		}
 		
 
-		/* Header Colors */
+	/* Header styles for Dark Mode */
 #header.alt.style1 .logo strong {
-    color: #7E54C8; /* Violet */
+    color: #5D4B8B; /* Deep Violet */
 }
 
 #header.alt.style2 .logo strong {
-    color: #5869B9; /* Indigo */
+    color: #4A3A75; /* Dark Lavender */
 }
 
 #header.alt.style3 .logo strong {
-    color: #3E90AF; /* Blue */
+    color: #2A4E72; /* Muted Blue */
 }
 
 #header.alt.style4 .logo strong {
-    color: #77B55F; /* Green */
+    color: #3C7262; /* Dark Sage Green */
 }
 
 #header.alt.style5 .logo strong {
-    color: #E4A635; /* Yellow */
+    color: #E8BB6D; /* Soft Gold */
 }
 
 #header.alt.style6 .logo strong {
-    color: #D66D62; /* Red */
+    color: #F28C7F; /* Muted Coral */
 }
-			
 
 			
 
@@ -3505,29 +3521,29 @@ input, select, textarea {
 				opacity: 0.75;
 			}
 
-/* Banner Colors */
+/* Banner styles for Dark Mode */
 #banner.style1:after {
-    background-color: #7E54C8; /* Violet */
+    background-color: #5D4B8B; /* Deep Violet */
 }
 
 #banner.style2:after {
-    background-color: #5869B9; /* Indigo */
+    background-color: #4A3A75; /* Dark Lavender */
 }
 
 #banner.style3:after {
-    background-color: #3E90AF; /* Blue */
+    background-color: #2A4E72; /* Muted Blue */
 }
 
 #banner.style4:after {
-    background-color: #77B55F; /* Green */
+    background-color: #3C7262; /* Dark Sage Green */
 }
 
 #banner.style5:after {
-    background-color: #E4A635; /* Yellow */
+    background-color: #E8BB6D; /* Soft Gold */
 }
 
 #banner.style6:after {
-    background-color: #D66D62; /* Red */
+    background-color: #F28C7F; /* Muted Coral */
 }
 
 		body.is-preload #banner:after {

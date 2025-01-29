@@ -2830,29 +2830,40 @@ input, select, textarea {
 				width: 60%;
 			}
 /*color palette can be changed here lite*/
-.tiles article:nth-child(6n - 5):before {
-    background-color: #C8A2C8; /* Violet */
+.tiles article:nth-child(8n - 7):before {
+    background-color: #B9A0D3; /* Soft Violet */
 }
 
-.tiles article:nth-child(6n - 4):before {
-    background-color: #7A97D2; /* Indigo */
+.tiles article:nth-child(8n - 6):before {
+    background-color: #9A7BB5; /* Lavender */
 }
 
-.tiles article:nth-child(6n - 3):before {
-    background-color: #4A8D7D; /* Blue */
+.tiles article:nth-child(8n - 5):before {
+    background-color: #6C86B3; /* Dusty Blue */
 }
 
-.tiles article:nth-child(6n - 2):before {
-    background-color: #7EBF91; /* Green */
+.tiles article:nth-child(8n - 4):before {
+    background-color: #88C7A2; /* Soft Green */
 }
 
-.tiles article:nth-child(6n - 1):before {
-    background-color: #F3B75D; /* Yellow */
+.tiles article:nth-child(8n - 3):before {
+    background-color: #A0E2A9; /* Light Mint */
 }
 
-.tiles article:nth-child(6n):before {
-    background-color: #F08474; /* Orange */
+.tiles article:nth-child(8n - 2):before {
+    background-color: #FFCC80; /* Subtle Yellow */
 }
+
+.tiles article:nth-child(8n - 1):before {
+    background-color: #FF9A8B; /* Subtle Peach */
+}
+
+.tiles article:nth-child(8n):before {
+    background-color: #F1A0A0; /* Soft Red */
+}
+
+
+
 
 
 
@@ -3273,30 +3284,30 @@ input, select, textarea {
 			position: absolute;
 		}
 	
-		/* Header Colors */
-		#header.alt.style1 .logo strong {
-			color: #C8A2C8;
-		}
+/* Header styles for Light Mode */
+#header.alt.style1 .logo strong {
+    color: #B9A0D3; /* Soft Violet */
+}
 
-		#header.alt.style2 .logo strong {
-			color: #7A97D2;
-		}
+#header.alt.style2 .logo strong {
+    color: #9A7BB5; /* Lavender */
+}
 
-		#header.alt.style3 .logo strong {
-			color: #4A8D7D;
-		}
+#header.alt.style3 .logo strong {
+    color: #6C86B3; /* Dusty Blue */
+}
 
-		#header.alt.style4 .logo strong {
-			color: #7EBF91;
-		}
+#header.alt.style4 .logo strong {
+    color: #88C7A2; /* Soft Green */
+}
 
-		#header.alt.style5 .logo strong {
-			color: #F3B75D;
-		}
+#header.alt.style5 .logo strong {
+    color: #FFCC80; /* Subtle Yellow */
+}
 
-		#header.alt.style6 .logo strong {
-			color: #F08474;
-		}
+#header.alt.style6 .logo strong {
+    color: #FF9A8B; /* Subtle Peach */
+}
 			
 
 		
@@ -3510,31 +3521,30 @@ input, select, textarea {
 				opacity: 0.75;
 			}
 			
-/* Banner Colors */
+/* Banner styles for Light Mode */
+#banner.style1:after {
+    background-color: #B9A0D3; /* Soft Violet */
+}
 
-		#banner.style1:after {
-			background-color: #C8A2C8;
-		}
+#banner.style2:after {
+    background-color: #9A7BB5; /* Lavender */
+}
 
-		#banner.style2:after {
-			background-color: #7A97D2;
-		}
+#banner.style3:after {
+    background-color: #6C86B3; /* Dusty Blue */
+}
 
-		#banner.style3:after {
-			background-color: #4A8D7D;
-		}
+#banner.style4:after {
+    background-color: #88C7A2; /* Soft Green */
+}
 
-		#banner.style4:after {
-			background-color: #7EBF91;
-		}
+#banner.style5:after {
+    background-color: #FFCC80; /* Subtle Yellow */
+}
 
-		#banner.style5:after {
-			background-color: #F3B75D;
-		}
-
-		#banner.style6:after {
-			background-color: #F08474;
-		}
+#banner.style6:after {
+    background-color: #FF9A8B; /* Subtle Peach */
+}
 
 		body.is-preload #banner:after {
 			opacity: 1.0;
