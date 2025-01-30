@@ -4075,8 +4075,6 @@ input, select, textarea {
 			border-radius: 21px; /* Adjust the radius as needed */
 		}
 
-		
-		
 		#goUpBtn {
 			position: fixed;
 			bottom: 20px;
@@ -4085,7 +4083,6 @@ input, select, textarea {
 			background-color: #007bff; /* Blue color */
 			color: white;
 			border: none;
-			padding: 10px 15px;
 			border-radius: 5px;
 			cursor: pointer;
 			font-size: 16px;
@@ -4096,4 +4093,7 @@ input, select, textarea {
 		  #goUpBtn:hover {
 			background-color: #0056b3; /* Darker blue */
 		  }
+		  
+		  
+		  
 		  
