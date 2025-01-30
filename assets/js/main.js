@@ -332,22 +332,6 @@
 
 			});
 
-// Show the button when user scrolls down
-window.onscroll = function () {
-	let goUpBtn = document.getElementById("goUpBtn");
-	if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-	  goUpBtn.style.display = "block";
-	} else {
-	  goUpBtn.style.display = "none";
-	}
-  };
-  
-  // Scroll smoothly to the top
-  function scrollToTop() {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-  
-
 			
 
 })(jQuery);
