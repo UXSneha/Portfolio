@@ -131,7 +131,7 @@
 
 		<section>
 			<ul class="actions stacked">
-				<li><a href="UXofPortfolio.html" class="button primary fit"> Next Design Experiment : 💼 Story behind my Portfolio 💼</a>
+				<li><a href="uxofportfolio.html" class="button primary fit"> Next : 💼 Story behind my Portfolio 💼</a>
 				</li>
 			</ul>
 
@@ -193,6 +193,22 @@
 			});
 		});
 	</script>
+	<script>// Show the button when user scrolls down
+		window.onscroll = function () {
+			let goUpBtn = document.getElementById("goUpBtn");
+			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				goUpBtn.style.display = "block";
+			} else {
+				goUpBtn.style.display = "none";
+			}
+		};
+
+		// Scroll smoothly to the top
+		function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
+	</script>
+	<button id="goUpBtn" onclick="scrollToTop()">⬆</button>
 
 </body>
 

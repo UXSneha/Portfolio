@@ -654,7 +654,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 		<section>
 			<ul class="actions stacked">
-				<li><a href="InfographicInterview.html" class="button primary fit"> Next Design Experiment : 📊 Experimenting with Infographics 📊</a>
+				<li><a href="InfographicInterview.html" class="button primary fit"> Next : 📊 Experimenting with Infographics 📊</a>
 				</li>
 			</ul>
 
@@ -713,7 +713,22 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			});
 		});
 	</script>
-	
+	<script>// Show the button when user scrolls down
+		window.onscroll = function () {
+			let goUpBtn = document.getElementById("goUpBtn");
+			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				goUpBtn.style.display = "block";
+			} else {
+				goUpBtn.style.display = "none";
+			}
+		};
+
+		// Scroll smoothly to the top
+		function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
+	</script>
+	<button id="goUpBtn" onclick="scrollToTop()">⬆</button>
 	
 </body>
 
