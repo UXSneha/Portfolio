@@ -4325,3 +4325,50 @@ body.is-menu-visible #menu .inner {
 	background-color: #0056b3;
 	/* Darker blue */
 }
+.tooltip {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+/* Dark Mode */
+body {
+    --tooltip-bg: rgba(255, 255, 255, 0.9);
+    --tooltip-text: #0A2422;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    body {
+        --tooltip-bg: rgba(0, 0, 0, 0.8);
+        --tooltip-text: #ffffff;
+    }
+}
