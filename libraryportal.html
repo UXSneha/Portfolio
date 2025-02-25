@@ -81,6 +81,16 @@
 				</div>
 			</div>
 		</section>
+		<!-- Sidebar Navigation -->
+	<section id="sidebar">
+		<ul>
+			<li><a href="#empathize" title="Empathize">🔍</a></li>
+			<li><a href="#define" title="Define">📝</a></li>
+			<li><a href="#ideate" title="Ideate">💡</a></li>
+			<li><a href="#prototype" title="Prototype">🛠</a></li>
+			<li><a href="#test" title="Test">✔️</a></li>
+		</ul>
+	</section>
 
 		<!-- Main -->
 		<div id="main">
@@ -385,7 +395,176 @@
 			});
 		});
 	</script>
+<style>
+	#sidebar {
+		position: fixed;
+		left: 10px;
+		top: 100px;
+		width: 50px;
+		background: rgba(26, 26, 26, 0.8);
+		padding: 10px;
+		border-radius: 10px;
+		display: none;
+		transition: opacity 0.3s ease-in-out;
+	}
 
+	#sidebar ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#sidebar ul li {
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	#sidebar ul li a {
+		color: white;
+		font-size: 18px;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		border-radius: 5px;
+		transition: background 0.3s;
+	}
+
+	#sidebar ul li a:hover::after {
+		content: attr(title);
+		position: absolute;
+		left: 60px;
+		background: #333;
+		color: white;
+		padding: 5px 8px;
+		border-radius: 5px;
+		white-space: nowrap;
+		font-size: 12px;
+	}
+
+	#sidebar ul li a:hover {
+		background: #444;
+	}
+</style>
+
+<script>
+	document.addEventListener("scroll", function () {
+		let sidebar = document.getElementById("sidebar");
+		let bannerHeight = document.getElementById("banner").offsetHeight;
+		let footer = document.getElementById("footer").offsetTop;
+		let scrollPosition = window.scrollY;
+
+		if (scrollPosition > bannerHeight && scrollPosition < footer - window.innerHeight) {
+			sidebar.style.display = "block";
+		} else {
+			sidebar.style.display = "none";
+		}
+	});
+
+	document.querySelectorAll('#sidebar a').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+</script>
+
+<style>
+	#sidebar {
+		position: fixed;
+		left: 10px;
+		top: 100px;
+		width: 60px;
+		background: rgba(45, 45, 45, 0.95);
+		padding: 10px;
+		border-radius: 12px;
+		display: none;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	#sidebar ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#sidebar ul li {
+		margin-bottom: 12px;
+		position: relative;
+	}
+
+	#sidebar ul li a {
+		color: #e0e0e0;
+		font-size: 20px;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		transition: background 0.3s, color 0.3s;
+	}
+
+	#sidebar ul li a:hover::after {
+		content: attr(title);
+		position: absolute;
+		left: 50px;
+		background: #666;
+		color: white;
+		padding: 6px 10px;
+		border-radius: 5px;
+		white-space: nowrap;
+		font-size: 13px;
+	}
+
+	#sidebar ul li a:hover {
+		background: #666;
+		color: #00ccff;
+	}
+
+	#sidebar ul li a.active {
+		background: #00ccff;
+		color: #fff;
+		font-weight: bold;
+	}
+</style>
+
+<script>
+	document.addEventListener("scroll", function () {
+		let sidebar = document.getElementById("sidebar");
+		let bannerHeight = document.getElementById("banner").offsetHeight;
+		let footer = document.getElementById("footer").offsetTop;
+		let scrollPosition = window.scrollY;
+
+		if (scrollPosition > bannerHeight && scrollPosition < footer - window.innerHeight) {
+			sidebar.style.display = "block";
+		} else {
+			sidebar.style.display = "none";
+		}
+	});
+
+
+
+	document.querySelectorAll('#sidebar a').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelectorAll('#sidebar a').forEach(a => a.classList.remove('active'));
+			this.classList.add('active');
+			let target = document.querySelector(this.getAttribute('href'));
+			let navbarHeight = document.getElementById("top-nav").offsetHeight || 130; // Default to 80px if navbar not found
+			let offsetTop = target.offsetTop - navbarHeight;
+			window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+		});
+	});
+
+</script>
 </body>
 
 </html>
