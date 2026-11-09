@@ -39,109 +39,80 @@
 		
 
 <!-- Menu -->
+
 <nav id="menu">
 
-    <div class="menu-wrapper">
+    <h2>Navigation</h2>
 
-        <!-- Main Navigation -->
-        <div id="main-menu" class="menu-panel active">
+    <!-- Sliding navigation container -->
+    <div class="portfolio-nav">
 
-            <h3>Navigation</h3>
+        <div class="portfolio-nav-track" id="portfolioNavTrack">
 
-            <ul class="links">
-                <li>
-                    <a href="#" onclick="showMenu('case-menu'); return false;">
-                        Case Studies <span>→</span>
-                    </a>
-                </li>
+            <!-- MAIN MENU -->
+            <div class="portfolio-nav-panel">
 
-                <li>
-                    <a href="designexperiments.html">
-                        🌐 Design Experiments
-                    </a>
-                </li>
+                <ul class="links">
+                    <li>
+                        <a href="#" onclick="portfolioMenu('cases'); return false;">
+                            Case Studies <span class="nav-arrow">→</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="moreaboutme.html">
-                        About Me
-                    </a>
-                </li>
+                    <li>
+                        <a href="designexperiments.html">Design Experiments</a>
+                    </li>
 
-                <li>
-                    <a href="Sneha_Resume.pdf" target="_blank"
-                       rel="noopener noreferrer">
-                        Resume
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="moreaboutme.html">About Me</a>
+                    </li>
 
-        </div>
+                    <li>
+                        <a href="Sneha_Resume.pdf" target="_blank"
+                           rel="noopener noreferrer">Resume</a>
+                    </li>
+                </ul>
+
+            </div>
 
 
-        <!-- Case Studies Submenu -->
-        <div id="case-menu" class="menu-panel">
+            <!-- CASE STUDIES -->
+            <div class="portfolio-nav-panel">
 
-            <h3>
-                <a href="#" onclick="showMenu('main-menu'); return false;"
-                   class="back-link">
-                    ←
-                </a>
-                Case Studies
-            </h3>
+                <ul class="links">
 
-            <ul class="links">
+                    <li class="submenu-heading">
+                        <a href="#" onclick="portfolioMenu('main'); return false;">
+                            <span class="nav-arrow">←</span> Back to Navigation
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="AIUX.html">💬 AI in UX</a>
-                </li>
+                    <li><a href="AIUX.html">💬 AI in UX</a></li>
+                    <li><a href="lendflex.html">🏦 Simplify</a></li>
+                    <li><a href="chatbotchronicles.html">💬 Chatbot Chronicles</a></li>
+                    <li><a href="lendflex.html">🏦 LendFlex</a></li>
+                    <li><a href="mediconnect.html">💖 MediConnect</a></li>
+                    <li><a href="onetask.html">🚀 One Task</a></li>
+                    <li><a href="bookmysport.html">🎾 Book My Sport</a></li>
+                    <li><a href="libraryportal.html">📚 Library Portal Redesign</a></li>
 
-                <li>
-                    <a href="lendflex.html">🏦 Simplify</a>
-                </li>
+                </ul>
 
-                <li>
-                    <a href="chatbotchronicles.html">
-                        💬 Chatbot Chronicles
-                    </a>
-                </li>
-
-                <li>
-                    <a href="lendflex.html">🏦 LendFlex</a>
-                </li>
-
-                <li>
-                    <a href="mediconnect.html">💖 MediConnect</a>
-                </li>
-
-                <li>
-                    <a href="onetask.html">🚀 One Task</a>
-                </li>
-
-                <li>
-                    <a href="bookmysport.html">🎾 Book My Sport</a>
-                </li>
-
-                <li>
-                    <a href="libraryportal.html">
-                        📚 Library Portal Redesign
-                    </a>
-                </li>
-
-            </ul>
+            </div>
 
         </div>
 
     </div>
 
-
-    <!-- Home Button -->
+    <!-- HOME -->
     <ul class="actions stacked">
         <li>
-            <a href="index.html" class="button primary fit">
-                🏠 HOME 🏠
-            </a>
+            <a href="index.html" class="button primary fit">🏠 HOME 🏠</a>
         </li>
     </ul>
+
+    <!-- Keep Forty close control -->
+    <a href="#menu" class="close"></a>
 
 </nav>
 
