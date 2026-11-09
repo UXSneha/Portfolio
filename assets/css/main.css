@@ -4367,3 +4367,27 @@ body {
         --tooltip-text: #ffffff;
     }
 }
+
+
+/* Nested navigation */
+#menu .links > li > ul {
+    margin: 0;
+    padding-left: 15px;
+    list-style: none;
+}
+
+#menu .links > li > ul li a {
+    font-size: 0.9em;
+    padding: 8px 10px;
+}
+
+/* Submenu heading */
+#menu .links > li.submenu > a {
+    font-weight: 600;
+}
+
+/* Optional separator */
+#menu .links > li.submenu {
+    margin-bottom: 10px;
+}
+
