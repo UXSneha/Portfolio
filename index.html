@@ -37,50 +37,182 @@
 		</header>
 
 		
-<!-- Menu -->
 
+<!-- Menu -->
 <nav id="menu">
 
-    <!-- Main Navigation -->
-    <div id="main-menu">
-        <h3>Navigation</h3>
-        <ul class="links">
-            <li><a href="#" onclick="showMenu('case-menu'); return false;">Case Studies →</a></li>
-            <li><a href="designexperiments.html">Design Experiments</a></li>
-            <li><a href="moreaboutme.html">About Me</a></li>
-            <li><a href="Sneha_Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+    <div class="menu-wrapper">
+
+        <!-- Main Navigation -->
+        <div id="main-menu" class="menu-panel active">
+
+            <h3>Navigation</h3>
+
+            <ul class="links">
+                <li>
+                    <a href="#" onclick="showMenu('case-menu'); return false;">
+                        Case Studies <span>→</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="designexperiments.html">
+                        🌐 Design Experiments
+                    </a>
+                </li>
+
+                <li>
+                    <a href="moreaboutme.html">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Sneha_Resume.pdf" target="_blank"
+                       rel="noopener noreferrer">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- Case Studies Submenu -->
+        <div id="case-menu" class="menu-panel">
+
+            <h3>
+                <a href="#" onclick="showMenu('main-menu'); return false;"
+                   class="back-link">
+                    ←
+                </a>
+                Case Studies
+            </h3>
+
+            <ul class="links">
+
+                <li>
+                    <a href="AIUX.html">💬 AI in UX</a>
+                </li>
+
+                <li>
+                    <a href="lendflex.html">🏦 Simplify</a>
+                </li>
+
+                <li>
+                    <a href="chatbotchronicles.html">
+                        💬 Chatbot Chronicles
+                    </a>
+                </li>
+
+                <li>
+                    <a href="lendflex.html">🏦 LendFlex</a>
+                </li>
+
+                <li>
+                    <a href="mediconnect.html">💖 MediConnect</a>
+                </li>
+
+                <li>
+                    <a href="onetask.html">🚀 One Task</a>
+                </li>
+
+                <li>
+                    <a href="bookmysport.html">🎾 Book My Sport</a>
+                </li>
+
+                <li>
+                    <a href="libraryportal.html">
+                        📚 Library Portal Redesign
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
 
-    <!-- Case Studies Navigation -->
-    <div id="case-menu" style="display:none;">
-        <h3>Case Studies</h3>
-        <ul class="links">
-            <li><a href="AIUX.html">💬 AI in UX </a></li>
-            <li><a href="lendflex.html">🏦 Simplify</a></li>
-			 <li><a href="chatbotchronicles.html">💬 Chatbot Chronicles</a></li>
-            <li><a href="lendflex.html">🏦 LendFlex</a></li>
-            <li><a href="mediconnect.html">💖 MediConnect</a></li>
-            <li><a href="onetask.html">🚀 One Task</a></li>
-            <li><a href="bookmysport.html">🎾 Book My Sport</a></li>
-            <li><a href="libraryportal.html">📚 Library Portal Redesign</a></li>
-            <li><a href="#" onclick="showMenu('main-menu'); return false;">← Back</a></li>
-        </ul>
-    </div>
 
+    <!-- Home Button -->
     <ul class="actions stacked">
-        <li><a href="index.html" class="button primary fit">🏠 HOME 🏠</a></li>
+        <li>
+            <a href="index.html" class="button primary fit">
+                🏠 HOME 🏠
+            </a>
+        </li>
     </ul>
 
 </nav>
 
+
+<!-- Menu Navigation Script -->
 <script>
+
 function showMenu(menuId) {
-    document.getElementById('main-menu').style.display = 'none';
-    document.getElementById('case-menu').style.display = 'none';
-    document.getElementById(menuId).style.display = 'block';
+
+    const panels = document.querySelectorAll('#menu .menu-panel');
+
+    panels.forEach(function(panel) {
+        panel.classList.remove('active');
+    });
+
+    document.getElementById(menuId).classList.add('active');
+
 }
+
 </script>
+
+
+<!-- Menu Styling -->
+<style>
+
+#menu .menu-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu .menu-panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease;
+}
+
+#menu .menu-panel.active {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Back navigation */
+
+#menu .back-link {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+/* Submenu heading */
+
+#menu .menu-panel h3 {
+    margin-bottom: 1em;
+}
+
+/* Smooth panel transition */
+
+#menu .menu-panel:not(.active) {
+    pointer-events: none;
+}
+
+</style>
+
 
 
 
