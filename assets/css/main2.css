@@ -4372,3 +4372,77 @@ body {
         --tooltip-text: #ffffff;
     }
 }
+
+
+/* =====================================
+   FORTY - MULTI LEVEL PORTFOLIO MENU
+   ===================================== */
+
+#menu .portfolio-nav {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.4s ease;
+}
+
+#menu .portfolio-nav-track {
+    display: flex;
+    width: 200%;
+    align-items: flex-start;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu .portfolio-nav-track.show-cases {
+    transform: translateX(-50%);
+}
+
+#menu .portfolio-nav-panel {
+    flex: 0 0 50%;
+    width: 50%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Back navigation */
+
+#menu .submenu-heading {
+    margin-bottom: 1.5em;
+}
+
+#menu .submenu-heading a {
+    color: #9bf1ff;
+    font-size: 0.85em;
+}
+
+#menu .nav-arrow {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Prevent interaction with hidden panel */
+
+#menu .portfolio-nav-panel[aria-hidden="true"] {
+    pointer-events: none;
+}
+
+/* Mobile compatibility */
+
+@media screen and (max-width: 480px) {
+    #menu .portfolio-nav {
+        max-width: 100%;
+    }
+
+    #menu .portfolio-nav-panel {
+        min-width: 0;
+    }
+}
+
+/* Respect reduced motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    #menu .portfolio-nav,
+    #menu .portfolio-nav-track {
+        transition: none;
+    }
+}
