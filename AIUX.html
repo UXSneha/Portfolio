@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<!--
+snehadesign.space
+-->
+<html>
+
+<head>
+    <title>AI UX | Design Intent Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" id="theme-style">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="assets/js/ToggleTheme.js"></script>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"> <img src="images/favicon.ico" alt="" width="40" height="40" /></a>
+            <nav>
+                <!-- Toggle Theme -->
+                <a href="#" id="theme-toggle" title="Toggle Theme">
+                    <img id="dark-mode-icon" src="images/theme-dark.png" alt="Switch to Light Mode" width="25"
+                        height="25" style="cursor: pointer; display: inline;">
+                    <img id="light-mode-icon" src="images/theme-light.png" alt="Switch to Dark Mode" width="25"
+                        height="25" style="cursor: pointer; display: none;">
+                </a>
+                <a href="#menu">MENU</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h3> Case Studies
+            </h3>
+            <ul class="links">
+                <li> <a href="chatbotchronicles.html">💬 Chatbot Chronicles 💬 </a> </li>
+                <li><a href="lendflex.html"> 🏦 LendFlex 🏦</a></li>
+                <li><a href="mediconnect.html"> 💖 MediConnect 💖</a> </li>
+                <li><a href="onetask.html">🚀 One Task 🚀</a> </li>
+                <li> <a href="bookmysport.html"> 🎾 Book My Sport 🎾</a></li>
+                <li> <a href="libraryportal.html">📚 Library Portal Redesign 📚</a> </li>
+                <li><a href="designexperiments.html">🌐 Design Experiments 🌐</a> </li>
+                <li><a href="moreaboutme.html">About Me</a></li>
+                <li><a href="Sneha_Resume.pdf" class="button small icon fit solid fa-download" target="_blank"
+                        rel="noopener noreferrer">Resume</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="index.html" class="button primary fit"> 🏠 HOME 🏠</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Banner -->
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+                    <img src="images/DC/loans.jpg" alt="Abstract project banner" />
+                </span>
+                <header class="major">
+                    <h1>Making AI Mockups Understandable</h1>
+                </header>
+                <div class="major">
+                    <h3>Exploring a Design Intent Document to help UX interpret and validate AI-generated interfaces</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar Navigation -->
+        <section id="sidebar" aria-label="Case study navigation">
+            <ul>
+                <li><a href="#overview" title="Overview">◎</a></li>
+                <li><a href="#challenge" title="The challenge">?</a></li>
+                <li><a href="#research" title="Research">⌕</a></li>
+                <li><a href="#scenario" title="Real scenario">▤</a></li>
+                <li><a href="#intervention" title="The DID">✳</a></li>
+                <li><a href="#findings" title="Findings">✓</a></li>
+                <li><a href="#reflection" title="Reflection">↗</a></li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+            <section id="overview">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Making the intent as visible as the interface</h2>
+                    </header>
+                    <p class="major">AI can generate a convincing interface in minutes. But a polished screen does not always explain why a feature exists, how a workflow is expected to behave, or which business rules sit behind it.</p>
+                    <p>This case study explores a lightweight way to bridge that gap: a <strong>Design Intent Document (DID)</strong> that translates an AI-generated mockup into a structured explanation of its likely purpose, features, workflow, functional expectations, and assumptions.</p>
+
+                    <div class="row">
+                        <div class="col-3 col-12-small"><div class="box">
+                            <h4>Focus</h4><p>AI-assisted UX workflows</p>
+                        </div></div>
+                        <div class="col-3 col-12-small"><div class="box">
+                            <h4>My contribution</h4><p>Research synthesis, workflow analysis, prompt design, and evaluation of the DID output</p>
+                        </div></div>
+                        <div class="col-3 col-12-small"><div class="box">
+                            <h4>Working example</h4><p>Pre-ETL Data Conditioning</p>
+                        </div></div>
+                        <div class="col-3 col-12-small"><div class="box">
+                            <h4>Intervention</h4><p>A concise, six-part Design Intent Document</p>
+                        </div></div>
+                    </div>
+
+                    <div class="box">
+                        <h3>The central question</h3>
+                        <p><strong>Could a concise explanation of an AI-generated mockup help UX designers spend less effort interpreting the artifact and more effort validating whether the solution makes sense?</strong></p>
+                    </div>
+                    <p class="small">This was an exploratory exercise. The potential benefits are discussed as hypotheses and observations, not as measured time savings or proven business outcomes.</p>
+                </div>
+            </section>
+
+            <section id="challenge">
+                <div class="inner">
+                    <header class="major">
+                        <h2>The challenge</h2>
+                        <p>AI makes it easier to get to a screen. Understanding the screen is a different task.</p>
+                    </header>
+                    <p>AI-generated requirements, prototypes, and mockups are increasingly becoming part of product and UX workflows. They can help teams visualize ideas early, explore possible solutions, and communicate concepts. But the generated interface may not carry the full context that shaped it.</p>
+                    <p>A screen can look complete while leaving important questions unanswered:</p>
+                    <ul>
+                        <li>What user or business need is this screen addressing?</li>
+                        <li>Why does a particular control or feature exist?</li>
+                        <li>What happens when a user changes a setting or encounters an error?</li>
+                        <li>Which business rules are reflected in the interface, and which are missing?</li>
+                        <li>Are the displayed interactions consistent with the existing product and domain?</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-6 col-12-small">
+                            <div class="box">
+                                <h3>What AI accelerates</h3>
+                                <ul>
+                                    <li>Visualizing concepts</li>
+                                    <li>Generating interface examples</li>
+                                    <li>Exploring possible layouts and flows</li>
+                                    <li>Creating early prototypes and documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <div class="box">
+                                <h3>What still needs human judgment</h3>
+                                <ul>
+                                    <li>Checking assumptions and business rules</li>
+                                    <li>Validating workflows and edge cases</li>
+                                    <li>Checking terminology and product consistency</li>
+                                    <li>Identifying missing context and gaps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        The interface was visible. The intent wasn't always visible.
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="research">
+                <div class="inner">
+                    <header class="major">
+                        <h2>What the research surfaced</h2>
+                        <p>AI changes where UX effort is spent, not the need for UX judgment.</p>
+                    </header>
+                    <p>Team research explored how AI-generated requirements, prototypes, and mockups are entering UX workflows. Participants recognized the value of faster visualization and communication, but none considered AI outputs trustworthy without human review.</p>
+                    <div class="box">
+                        <h3>A shift in the workflow</h3>
+                        <div class="row">
+                            <div class="col-6 col-12-small">
+                                <h4>Traditional flow</h4>
+                                <ol>
+                                    <li>Problem statement</li>
+                                    <li>UX exploration</li>
+                                    <li>Design solution</li>
+                                </ol>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <h4>Emerging AI-assisted flow</h4>
+                                <ol>
+                                    <li>AI-generated prototype</li>
+                                    <li>UX interprets intent</li>
+                                    <li>UX validates assumptions</li>
+                                    <li>UX identifies gaps</li>
+                                    <li>UX redesigns or refines the solution</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Five recurring observations</h3>
+                    <div class="row">
+                        <div class="col-6 col-12-small">
+                            <h4>01. Faster visualization</h4>
+                            <p>AI can turn abstract requirements into something teams can see and discuss earlier.</p>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <h4>02. Illusion of completeness</h4>
+                            <p>A polished mockup can appear finished even when requirements, workflows, and edge cases remain incomplete.</p>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <h4>03. More interpretation work</h4>
+                            <p>UX has to reconstruct the intent behind the generated interface before it can confidently evaluate it.</p>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <h4>04. Missing product context</h4>
+                            <p>AI may not have the full product history, domain constraints, existing workflows, or business rules.</p>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <h4>05. Unclear ownership</h4>
+                            <p>Teams may treat the generated artifact as the requirement, leaving UX to determine what is accurate and what is assumed.</p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        Designers are becoming an unofficial validation layer for AI-generated artifacts.
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="scenario">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Putting the idea to work</h2>
+                        <p>A real example: Pre-ETL Data Conditioning</p>
+                    </header>
+                    <p>To explore the problem in a concrete workflow, I used a detailed <strong>Pre-ETL Data Conditioning Functional Requirements Document (FRD)</strong> as the source for an AI-generated HTML mockup, then examined what a DID could make easier to understand.</p>
+                    <div class="box">
+                        <h3>Starting point: a detailed FRD</h3>
+                        <p>The FRD covered several layers of product behavior, including:</p>
+                        <ul>
+                            <li>File structure configuration</li>
+                            <li>Transformation and mapping rules</li>
+                            <li>Filtering rules and execution order</li>
+                            <li>Validation logic and edge cases</li>
+                            <li>Audit requirements and configuration management</li>
+                            <li>Processing workflows and related permissions</li>
+                        </ul>
+                    </div>
+                    <h3>From requirements to an interface</h3>
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <div class="box">
+                                <h4>01. FRD</h4>
+                                <p>Detailed business and functional requirements describing what the system needs to support.</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <div class="box">
+                                <h4>02. AI mockup</h4>
+                                <p>An HTML representation of the proposed experience, including configuration, rules, monitoring, and audit areas.</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <div class="box">
+                                <h4>03. DID</h4>
+                                <p>A structured interpretation of what the generated interface appears to intend.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>What the mockup represented</h3>
+                    <ul>
+                        <li>ETL Job configuration</li>
+                        <li>Rule Management and Add/Edit Rule forms</li>
+                        <li>File Structure Settings</li>
+                        <li>Monitoring and Audit History</li>
+                        <li>Pre-conditioned file download</li>
+                    </ul>
+                    <h3>Questions the interface alone did not answer clearly</h3>
+                    <ul>
+                        <li>Why is there a master toggle?</li>
+                        <li>Why can rules be reordered?</li>
+                        <li>Why can a rule refer to column names as well as column indexes?</li>
+                        <li>Why is an audit screen needed?</li>
+                        <li>Why does the workflow include downloading a pre-conditioned file?</li>
+                        <li>How are the different configuration steps expected to work together?</li>
+                    </ul>
+                    <div class="box">
+                        <h3>Evidence to add to this case study</h3>
+                        <p>Use your actual artifacts here to make the case study tangible. Add a screenshot of the source FRD, the generated HTML mockup, and the DID output. Crop each to the relevant section and remove confidential or sensitive information before publishing.</p>
+                        <div class="row">
+                            <div class="col-4 col-12-small"><div class="image fit"><div style="border:1px dashed #999;padding:2.5rem 1rem;text-align:center;">FRD excerpt<br><small>Insert source requirement screenshot</small></div></div></div>
+                            <div class="col-4 col-12-small"><div class="image fit"><div style="border:1px dashed #999;padding:2.5rem 1rem;text-align:center;">AI-generated mockup<br><small>Insert HTML mockup screenshot</small></div></div></div>
+                            <div class="col-4 col-12-small"><div class="image fit"><div style="border:1px dashed #999;padding:2.5rem 1rem;text-align:center;">DID output<br><small>Insert generated DID screenshot</small></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="intervention">
+                <div class="inner">
+                    <header class="major">
+                        <h2>The intervention: a Design Intent Document</h2>
+                        <p>Make the generated interface easier to understand, inspect, and question.</p>
+                    </header>
+                    <p>I explored a simple intervention: ask AI to analyze the generated mockup and produce a concise document that explains its likely intent. The DID is not another requirements document. It is an interpretation layer between the generated interface and the UX designer reviewing it.</p>
+                    <h3>The six parts of the DID</h3>
+                    <div class="row">
+                        <div class="col-6 col-12-small"><h4>01. Screen Summary</h4><p>What is the purpose of this screen, and what task is the user trying to complete?</p></div>
+                        <div class="col-6 col-12-small"><h4>02. Feature List</h4><p>What key features and capabilities are shown or implied?</p></div>
+                        <div class="col-6 col-12-small"><h4>03. User Flow Description</h4><p>What journey and major interactions does the interface appear to support?</p></div>
+                        <div class="col-6 col-12-small"><h4>04. Component Breakdown</h4><p>What are the main UI elements, and what role does each appear to play?</p></div>
+                        <div class="col-6 col-12-small"><h4>05. Functional Requirements / User Stories</h4><p>What functional expectations can be expressed from the generated interface?</p></div>
+                        <div class="col-6 col-12-small"><h4>06. Key Assumptions &amp; Intended Behaviors</h4><p>What defaults, validations, business rules, and expected behaviors appear to be assumed?</p></div>
+                    </div>
+                    <div class="box">
+                        <h3>How I framed the prompt</h3>
+                        <p>Analyze the AI-generated mockup and create a concise Design Intent Document. Explain the likely intent of the design through a screen summary, feature list, user flow, component breakdown, functional requirements or user stories, and key assumptions and intended behaviors. Keep it brief and structured. Help Design, Product, and Engineering understand the intent without making unsupported assumptions.</p>
+                        <p><strong>Important:</strong> The word “likely” matters. The DID describes what can be inferred from the mockup. It does not turn an assumption into a confirmed business requirement.</p>
+                    </div>
+                    <h3>What changes with the DID?</h3>
+                    <div class="row">
+                        <div class="col-6 col-12-small">
+                            <div class="box">
+                                <h4>Without a DID</h4>
+                                <p>UX has to move between the FRD and mockup, infer purpose, reconstruct the workflow, and identify which behaviors need clarification.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <div class="box">
+                                <h4>With a DID</h4>
+                                <p>UX gets a structured starting point for understanding the generated interface, checking assumptions, and identifying what still needs validation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        The DID doesn't create new information. It makes relevant information easier to consume and validate.
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="findings">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Where the DID can help</h2>
+                        <p>Three practical use cases from the Pre-ETL example.</p>
+                    </header>
+                    <div class="box">
+                        <h3>01. Understand the screen</h3>
+                        <p><strong>Scenario:</strong> A UX designer receives the generated ETL Job and Rule Management screens.</p>
+                        <p><strong>DID contribution:</strong> The Screen Summary, Feature List, and User Flow provide a first explanation of what the screen is for and how it may be used.</p>
+                        <p><strong>Potential value:</strong> Faster orientation and less need to reverse-engineer the interface from visual elements alone.</p>
+                    </div>
+                    <div class="box">
+                        <h3>02. Understand expected behavior</h3>
+                        <p><strong>Scenario:</strong> The mockup shows configurable rules, but the interface alone does not explain all the conditions, validations, or expected behavior.</p>
+                        <p><strong>DID contribution:</strong> Functional Requirements and Key Assumptions make inferred expectations more explicit and easier to review.</p>
+                        <p><strong>Potential value:</strong> UX can move from guessing what a control might do to validating whether the inferred behavior matches the FRD and domain rules.</p>
+                    </div>
+                    <div class="box">
+                        <h3>03. Align on meaning</h3>
+                        <p><strong>Scenario:</strong> Product, UX, and Engineering may interpret the same generated screen differently.</p>
+                        <p><strong>DID contribution:</strong> A shared description of purpose, features, workflow, and assumptions gives the team a common starting point for discussion.</p>
+                        <p><strong>Potential value:</strong> More focused conversations about what is correct, missing, or still uncertain.</p>
+                    </div>
+
+                    <header class="major">
+                        <h2>Benefits and trade-offs</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-6 col-12-small">
+                            <h3>Where it may help</h3>
+                            <ul>
+                                <li>Faster initial understanding of generated screens</li>
+                                <li>Clearer visibility of inferred behavior and assumptions</li>
+                                <li>A shared vocabulary across Design, Product, and Engineering</li>
+                                <li>A more focused starting point for validation</li>
+                                <li>Potentially less effort spent reconstructing intent</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <h3>What it cannot solve</h3>
+                            <ul>
+                                <li>A DID can be wrong if the mockup is wrong.</li>
+                                <li>It can become another layer of documentation.</li>
+                                <li>It may reinforce solution anchoring.</li>
+                                <li>It cannot confirm business rules or domain truth by itself.</li>
+                                <li>It does not replace the FRD, UX discovery, or stakeholder review.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>A useful guardrail</h3>
+                        <p><strong>The DID should make the artifact easier to question, not harder to question.</strong></p>
+                        <p>Use it to surface assumptions and guide validation. Do not treat it as approval of the AI-generated solution or as a replacement for the source requirements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reflection">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Reflection and next steps</h2>
+                        <p>The value is not in documenting every screen. It is in making uncertainty easier to see.</p>
+                    </header>
+                    <h3>When a DID is useful</h3>
+                    <ul>
+                        <li>When an AI-generated mockup is being handed to UX for review.</li>
+                        <li>When the interface looks complete but its purpose or behavior is unclear.</li>
+                        <li>When teams need a quick, shared interpretation before a deeper review.</li>
+                        <li>When assumptions need to be separated from confirmed requirements.</li>
+                    </ul>
+                    <h3>When it is not enough</h3>
+                    <ul>
+                        <li>When the source requirements are missing or unreliable.</li>
+                        <li>When domain rules need confirmation from subject matter experts.</li>
+                        <li>When the team has not yet validated the underlying user problem.</li>
+                        <li>When the generated interface itself needs to be challenged or rethought.</li>
+                    </ul>
+                    <h3>How I would evaluate it next</h3>
+                    <p>This exploration suggests a useful direction, but the impact needs to be tested. A next iteration could compare UX review with and without a DID using the same AI-generated artifact.</p>
+                    <ul>
+                        <li>Time taken to understand the mockup and its workflow</li>
+                        <li>Number and type of clarification questions raised</li>
+                        <li>Assumptions and missing requirements identified</li>
+                        <li>Accuracy of the DID against the source FRD and expert review</li>
+                        <li>Whether the DID helps reviewers focus on meaningful UX decisions</li>
+                    </ul>
+                    <div class="box">
+                        <h3>What this means for UX</h3>
+                        <p>AI can generate an interface, but the generated interface still needs interpretation, validation, and judgment. The opportunity for UX is not simply to polish what AI creates. It is to understand the intent, question the assumptions, and make sure the solution addresses the right problem.</p>
+                        <blockquote>
+                            FRD provides depth. Mockup provides visualization. DID provides interpretation. UX provides judgment.
+                        </blockquote>
+                        <p><strong>AI can generate the interface. UX still needs to understand the intent.</strong></p>
+                    </div>
+                    <p class="small">Case study note: This is an exploratory workflow study. No quantitative reduction in time, meetings, or rework has been established yet. Any future impact claims should be based on a comparative evaluation.</p>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <ul class="actions stacked">
+                <li><a href="index.html" class="button primary fit">Back to Portfolio</a></li>
+            </ul>
+        </section>
+
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <ul class="copyright">
+                            <li>&copy; 2025 | 🌟 Designed & Coded with Passion | 🌈 My Spectrum of Creative Projects.
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+
+
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const themeToggle = document.getElementById("theme-toggle");
+                        const themeStyle = document.getElementById("theme-style");
+                        const darkModeIcon = document.getElementById("dark-mode-icon");
+                        const lightModeIcon = document.getElementById("light-mode-icon");
+
+                        // Check localStorage for the saved theme
+                        const savedTheme = localStorage.getItem("theme");
+                        if (savedTheme === "light") {
+                            themeStyle.setAttribute("href", "assets/css/main2.css");
+                            darkModeIcon.style.display = "none";
+                            lightModeIcon.style.display = "inline";
+                        }
+
+                        // Toggle the theme on logo click
+                        themeToggle.addEventListener("click", function (event) {
+                            event.preventDefault(); // Prevent default link behavior
+                            if (themeStyle.getAttribute("href") === "assets/css/main.css") {
+                                themeStyle.setAttribute("href", "assets/css/main2.css");
+                                darkModeIcon.style.display = "none";
+                                lightModeIcon.style.display = "inline";
+                                localStorage.setItem("theme", "light");
+                            } else {
+                                themeStyle.setAttribute("href", "assets/css/main.css");
+                                darkModeIcon.style.display = "inline";
+                                lightModeIcon.style.display = "none";
+                                localStorage.setItem("theme", "dark");
+                            }
+                        });
+                    });
+                </script>
+<style>
+    #sidebar {
+        position: fixed;
+        left: 10px;
+        top: 100px;
+        width: 50px;
+        background: rgba(26, 26, 26, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #sidebar ul li {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    #sidebar ul li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    #sidebar ul li a:hover::after {
+        content: attr(title);
+        position: absolute;
+        left: 60px;
+        background: #333;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    #sidebar ul li a:hover {
+        background: #444;
+    }
+</style>
+
+<script>
+    document.addEventListener("scroll", function () {
+        let sidebar = document.getElementById("sidebar");
+        let bannerHeight = document.getElementById("banner").offsetHeight;
+        let footer = document.getElementById("footer").offsetTop;
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > bannerHeight && scrollPosition < footer - window.innerHeight) {
+            sidebar.style.display = "block";
+        } else {
+            sidebar.style.display = "none";
+        }
+    });
+
+    document.querySelectorAll('#sidebar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<style>
+    #sidebar {
+        position: fixed;
+        left: 10px;
+        top: 100px;
+        width: 60px;
+        background: rgba(45, 45, 45, 0.95);
+        padding: 10px;
+        border-radius: 12px;
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar ul li {
+        margin-bottom: 12px;
+        position: relative;
+    }
+
+    #sidebar ul li a {
+        color: #e0e0e0;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    #sidebar ul li a:hover::after {
+        content: attr(title);
+        position: absolute;
+        left: 50px;
+        background: #666;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    #sidebar ul li a:hover {
+        background: #666;
+        color: #00ccff;
+    }
+
+    #sidebar ul li a.active {
+        background: #00ccff;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    document.addEventListener("scroll", function () {
+        let sidebar = document.getElementById("sidebar");
+        let bannerHeight = document.getElementById("banner").offsetHeight;
+        let footer = document.getElementById("footer").offsetTop;
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > bannerHeight && scrollPosition < footer - window.innerHeight) {
+            sidebar.style.display = "block";
+        } else {
+            sidebar.style.display = "none";
+        }
+    });
+
+
+
+    document.querySelectorAll('#sidebar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelectorAll('#sidebar a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+            let target = document.querySelector(this.getAttribute('href'));
+            let navbarHeight = document.getElementById("top-nav").offsetHeight || 130; // Default to 80px if navbar not found
+            let offsetTop = target.offsetTop - navbarHeight;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        });
+    });
+
+</script>
+</body>
+
+</html>
