@@ -332,6 +332,84 @@
 
 		});
 
+/* =====================================
+   PORTFOLIO MENU NAVIGATION
+   ===================================== */
+
+(function () {
+
+    function initPortfolioMenu() {
+
+        const track = document.getElementById('portfolioNavTrack');
+        const container = document.querySelector('#menu .portfolio-nav');
+        const panels = document.querySelectorAll(
+            '#menu .portfolio-nav-panel'
+        );
+
+        if (!track || !container || panels.length !== 2) return;
+
+        let currentMenu = 'main';
+
+        function updateMenu(menu) {
+
+            currentMenu = menu;
+
+            const isCases = menu === 'cases';
+
+            track.classList.toggle('show-cases', isCases);
+
+            panels.forEach(function (panel, index) {
+
+                const isActive = isCases ? index === 1 : index === 0;
+
+                panel.setAttribute('aria-hidden', !isActive);
+
+                if (isActive) {
+                    panel.removeAttribute('inert');
+                } else {
+                    panel.setAttribute('inert', '');
+                }
+
+            });
+
+            const activePanel = isCases ? panels[1] : panels[0];
+
+            container.style.height = activePanel.scrollHeight + 'px';
+
+        }
+
+        window.portfolioMenu = function (menu) {
+
+            if (menu !== 'main' && menu !== 'cases') return;
+
+            updateMenu(menu);
+
+        };
+
+        // Initialise
+        updateMenu('main');
+
+        // Adjust height if screen dimensions change
+        window.addEventListener('resize', function () {
+
+            const activePanel = currentMenu === 'cases'
+                ? panels[1]
+                : panels[0];
+
+            container.style.height = activePanel.scrollHeight + 'px';
+
+        });
+
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPortfolioMenu);
+    } else {
+        initPortfolioMenu();
+    }
+
+})();
+
 
 
 })(jQuery);
