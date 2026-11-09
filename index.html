@@ -38,48 +38,48 @@
 
 		
 <!-- Menu -->
+
 <nav id="menu">
-    <h3>Navigation</h3>
 
-    <ul class="links">
+    <!-- Main Navigation -->
+    <div id="main-menu">
+        <h3>Navigation</h3>
+        <ul class="links">
+            <li><a href="#" onclick="showMenu('case-menu'); return false;">Case Studies →</a></li>
+            <li><a href="designexperiments.html">Design Experiments</a></li>
+            <li><a href="moreaboutme.html">About Me</a></li>
+            <li><a href="Sneha_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </div>
 
-        <!-- Case Studies -->
-        <li class="submenu">
-            <a href="#">Case Studies</a>
-            <ul>
-				<li><a href="chatbotchronicles.html">💬 AI in UX </a></li>
-                <li><a href="lendflex.html">🏦 Simplyfying workflow </a></li>
-                <li><a href="chatbotchronicles.html">💬 Chatbot Chronicles</a></li>
-                <li><a href="lendflex.html">🏦 LendFlex</a></li>
-                <li><a href="mediconnect.html">💖 MediConnect</a></li>
-                <li><a href="onetask.html">🚀 One Task</a></li>
-                <li><a href="bookmysport.html">🎾 Book My Sport</a></li>
-                <li><a href="libraryportal.html">📚 Library Portal Redesign</a></li>
-            </ul>
-        </li>
-
-        <!-- Other Work -->
-        <li class="submenu">
-            <a href="#">Other Work</a>
-            <ul>
-                <li><a href="designexperiments.html">🌐 Design Experiments</a></li>
-            </ul>
-        </li>
-
-        <li><a href="moreaboutme.html">About Me</a></li>
-
-        <li>
-            <a href="Sneha_Resume.pdf"
-               class="button small icon fit solid fa-download"
-               target="_blank"
-               rel="noopener noreferrer">Resume</a>
-        </li>
-    </ul>
+    <!-- Case Studies Navigation -->
+    <div id="case-menu" style="display:none;">
+        <h3>Case Studies</h3>
+        <ul class="links">
+            <li><a href="chatbotchronicles.html">💬 Chatbot Chronicles</a></li>
+            <li><a href="lendflex.html">🏦 LendFlex</a></li>
+            <li><a href="mediconnect.html">💖 MediConnect</a></li>
+            <li><a href="onetask.html">🚀 One Task</a></li>
+            <li><a href="bookmysport.html">🎾 Book My Sport</a></li>
+            <li><a href="libraryportal.html">📚 Library Portal Redesign</a></li>
+            <li><a href="#" onclick="showMenu('main-menu'); return false;">← Back</a></li>
+        </ul>
+    </div>
 
     <ul class="actions stacked">
         <li><a href="index.html" class="button primary fit">🏠 HOME 🏠</a></li>
     </ul>
+
 </nav>
+
+<script>
+function showMenu(menuId) {
+    document.getElementById('main-menu').style.display = 'none';
+    document.getElementById('case-menu').style.display = 'none';
+    document.getElementById(menuId).style.display = 'block';
+}
+</script>
+
 
 
 		<section id="banner" class="major">
